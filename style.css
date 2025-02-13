@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightblue;
+}
+.wrapper{
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+.wrapper header{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.wrapper .content{
+    margin: 35px 0;
+}
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area .quote{
+    font-size: 23px;
+    text-align: center;
+    word-break: break-all;
+}
+.quote-area i{
+    font-size: 15px;
+}
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    display: flex;
+    margin:  0 0 3px 10px ;
+    align-items: flex-end;
+}
+.content .author{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-style: italic;
+}
+.author span:first-child{
+    margin: -7px 5px 0 0;
+    /* font-family: monospace; */
+}
+.wrapper .buttons{
+    border-top: 1px solid rgba(196, 174, 174, 0.388);
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.features ul{
+    display: flex;
+}
+.features ul li{
+    gap: 15px;
+    list-style: none;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 7px;
+    border-radius: 50%;
+    border: 2px solid rgba(95, 158, 160, 0.199);
+    color: rgb(119, 119, 240);
+    height: 47px;
+    width: 47px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.features ul li:hover{
+    color: white;
+    background-color: rgba(0, 0, 255, 0.681);
+    border: none;
+}
+button{
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    background-color: rgb(199, 199, 220);
+    color: black;
+    transition: 0.3s all ease;
+}
+button:hover{
+    background-color: darkblue;
+    color: white;
+}
